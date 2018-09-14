@@ -8,5 +8,18 @@ namespace _14_2
 {
     class Vertex
     {
+        public char lable;
+        public bool isInTree;
+        public List<Edge> edges;
+        public Vertex(char l)
+        {
+            lable = l;
+            isInTree = false;
+            edges = new List<Edge>();
+        }
+        public void addEdge(Edge edg)
+        {
+            edges.Add(edg);
+        }
     }
 }

@@ -8,5 +8,12 @@ namespace _14_2
 {
     class Edge
     {
+        public int weight;
+        public int end;
+        public Edge(int w,int e)
+        {
+            weight = w;
+            end = e;
+        }
     }
 }
